@@ -3,18 +3,34 @@
 }
 
 .squareTile {
-    width: 5rem;
-    height: 5rem;
+    width: 2rem;
+    height: 2rem;
     background-color: transparent;
     transition: background-color 1s;
 }
 
-.squareTile:hover {
+.red:hover {
+    background-color: #c04343;
+    transition: background-color 0s;
+}
+
+.green:hover {
     background-color: #43cc77;
+    transition: background-color 0s;
+}
+
+.blue:hover {
+    background-color: #439acc;
+    transition: background-color 0s;
+}
+
+.yellow:hover {
+    background-color: #ccca43;
     transition: background-color 0s;
 }
 
 #tileSpace {
     display: grid;
-    grid-template-columns: 5rem 5rem 5rem 5rem 5rem 5rem 5rem 5rem 5rem 5rem;
+    grid-template-columns: repeat(100, 2rem);
+    transform: rotate3d(2, -1, 1, 45deg);
 }
